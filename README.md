@@ -1,6 +1,6 @@
 # Redis rate-limiting example
 
-![alt text](https://github.com/deliveryweb/redis-rate-limiting-python)
+![alt text](preview.png)
 
 ## Development
 
