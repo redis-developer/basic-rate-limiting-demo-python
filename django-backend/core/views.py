@@ -1,4 +1,5 @@
 import redis
+from django.conf import settings
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.utils.decorators import classonlymethod
@@ -8,7 +9,7 @@ import asyncio
 from datetime import timedelta
 from redis import Redis
 
-redis = redis.Redis(host='localhost', port=6379, db=0)
+redis = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
 key = "PING"
 limit = 10
 period = timedelta(seconds=10)

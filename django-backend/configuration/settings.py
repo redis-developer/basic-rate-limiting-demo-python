@@ -12,6 +12,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+from dotenv import load_dotenv
+
+# load dotenv config
+load_dotenv()
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,9 +28,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7ogsf#3j^jo=i^q(5(ai_fh=iao=vhimkh602!x0%zm98ecana'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DJANGO_DEBUG", False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", ['127.0.0.1', 'localhost'])
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -126,5 +133,7 @@ STATICFILES_DIR = [
 ]
 STATIC_ROOT = "/static_root/"
 
-REDIS_HOST = '127.0.0.1"'
-REDIS_PORT = '6379'
+REDIS_HOST = os.getenv("REDIS_HOST", '127.0.0.1')
+REDIS_PORT = os.getenv("REDIS_PORT", '6379')
+REDIS_DB = os.getenv("REDIS_DB", '0')
+
