@@ -1,6 +1,6 @@
 # Redis rate-limiting example
 
-![alt text](https://github.com/RemoteCraftsmen/redis-rate-limiting/blob/main/preview.png?raw=true)
+![alt text](https://github.com/deliveryweb/redis-rate-limiting-python)
 
 ## Development
 
