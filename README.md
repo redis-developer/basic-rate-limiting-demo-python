@@ -6,7 +6,7 @@
 
 ```
 git clone https://github.com/RemoteCraftsmen/redis-rate-limiting/
-
+```
 #### If you install redis manually open django-backend/configuration folder and copy `.env.example` to create `.env`. And provide the values for environment variables
     - REDIS_HOST: Redis server host
     - REDIS_PORT: Redis server port
