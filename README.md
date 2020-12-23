@@ -1,11 +1,11 @@
 # Redis rate-limiting example
 
-![alt text](https://github.com/deliveryweb/redis-rate-limiting-python)
+![alt text](preview.png)
 
 ## Development
 
 ```
-git clone https://github.com/RemoteCraftsmen/redis-rate-limiting/
+git clone https://github.com/deliveryweb/redis-rate-limiting-python.git
 ```
 
 
