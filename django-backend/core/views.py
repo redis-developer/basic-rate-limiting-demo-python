@@ -1,16 +1,15 @@
+from datetime import timedelta
+
+import asyncio
 from django.conf import settings
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.utils.decorators import classonlymethod
 from django.views import View
-from datetime import timedelta
 from redis import Redis
 
-import asyncio
-
-
 redis_default = Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
-key = "PING"
+key = 'PING'
 limit = 10
 period = timedelta(seconds=10)
 
