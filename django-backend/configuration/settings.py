@@ -128,10 +128,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIR = [
-
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = "/static_root/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 REDIS_HOST = os.getenv("REDIS_HOST", '127.0.0.1')
 REDIS_PORT = os.getenv("REDIS_PORT", '6379')
