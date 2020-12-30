@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.utils.decorators import classonlymethod
 from django.views import View
+from ipware import get_client_ip
 from redis import Redis
 
 redis_default = Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
@@ -32,7 +33,8 @@ class GetPongView(View):
         return view
 
     async def get(self, request, *args, **kwargs):
-        if request_is_limited(redis_default, key, limit, period):
+        ip, is_routable = get_client_ip(request)
+        if request_is_limited(redis_default,  '%s:%s' % (ip, key), limit, period):
             return HttpResponse("Too many requests, please try again later.", status=429)
         return HttpResponse("PONG", status=200)
 
