@@ -1,0 +1,17 @@
+{
+  "name": "Redis Rate Limit Example",
+  "description": "App for testing request rate limits in Python and Redis",
+  "repository": "https://github.com/",
+  "logo": "https://redis.io/images/redis-white.png",
+  "keywords": ["python", "py", "redis"],
+  "env": {
+		"REDIS_ENDPOINT_URI": {
+	  	"description": "Redis server URI",
+      "required": true
+    },
+    "REDIS_PASSWORD": {
+	    "description": "Password to your Redis server",
+	    "required": true
+    }
+  }
+}

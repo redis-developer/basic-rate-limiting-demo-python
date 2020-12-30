@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "name": "redis-rate-limit",
+    "builds": [{
+        "src": "django-backend/configuration/wsgi.py",
+        "use": "@ardnt/now-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "django-backend/configuration/wsgi.py"
+    }]
+}
