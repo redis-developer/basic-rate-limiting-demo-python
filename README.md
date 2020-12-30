@@ -37,7 +37,7 @@ git clone https://github.com/deliveryweb/redis-rate-limiting-python.git
 
 
 ### Run docker compose or install redis manually
-Install docker for mac: https://docs.docker.com/docker-for-mac/install/
+Install docker on mac: https://docs.docker.com/docker-for-mac/install/
 ```sh
 docker network create global
 docker-compose up -d --build
