@@ -4,7 +4,7 @@
 
 # Redis rate-limiting example (command line)
 
-![alt text](redis_command.png)
+![alt text](command-redis.png)
 
 
 ## Try it out
