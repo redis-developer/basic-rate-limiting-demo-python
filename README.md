@@ -1,6 +1,33 @@
-# Redis rate-limiting example
+# Redis rate-limiting example front
 
 ![alt text](preview.png)
+
+# Redis rate-limiting example (command line)
+
+![alt text](redis_command.png)
+
+
+## Try it out
+
+<p>
+    <a href="https://heroku.com/deploy" target="_blank">
+        <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heorku" width="200px"/>
+    <a>
+</p>
+
+<p>
+    <a href="https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdeliveryweb%2Fredis-rate-limiting-python&env=REDIS_ENDPOINT_URI,REDIS_PASSWORD&envDescription=REDIS_ENDPOINT_URI%20is%20required%20at%20least%20to%20connect%20to%20Redis%20clouding%20server" target="_blank">
+        <img src="https://vercel.com/button" alt="Deploy with Vercel" width="200px" height="50px"/>
+    </a>
+</p>
+
+<p>
+    <a href="https://deploy.cloud.run" target="_blank">
+        <img src="https://deploy.cloud.run/button.svg" alt="Run on Google Cloud" width="200px"/>
+    </a>
+</p>
+
+
 
 ## Development
 
@@ -10,6 +37,7 @@ git clone https://github.com/deliveryweb/redis-rate-limiting-python.git
 
 
 ### Run docker compose or install redis manually
+Install docker for mac: https://docs.docker.com/docker-for-mac/install/
 ```sh
 docker network create global
 docker-compose up -d --build
@@ -23,6 +51,9 @@ docker-compose up -d --build
 
 
 #### Setup and run 
+Install python, pip and venv on mac: https://installpython3.com/mac/
+
+Use python version: 3.8
 ``` sh
 python3 -m venv venv
 source ./venv/bin/activate
