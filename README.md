@@ -3,7 +3,7 @@
 </div>
 <div style="height: 150px"></div>
 
-# Django(python) Redis rate limit Example
+# Django(python) Redis rate-limit Example
 
 Show how the redis works with Django(Python).
 
