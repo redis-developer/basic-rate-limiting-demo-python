@@ -1,3 +1,12 @@
+<div style="position: absolute; top: 0px; right: 0px;">
+    <img width="200" height="200" src="https://redislabs.com/wp-content/uploads/2020/12/RedisLabs_Illustration_HomepageHero_v4.svg">
+</div>
+<div style="height: 150px"></div>
+
+# Django(python) Redis rate limit Example
+
+Show how the redis works with Django(Python).
+
 # Redis rate-limiting example front
 
 ![alt text](preview.png)
