@@ -54,7 +54,7 @@ docker-compose up -d --build
     - REDIS_HOST: Redis server host
     - REDIS_PORT: Redis server port
     - REDIS_DB: Redis server db index
-
+    - REDIS_PASSWORD: Redis server password
 
 #### Setup and run 
 Install python, pip and venv (on mac: https://installpython3.com/mac/)

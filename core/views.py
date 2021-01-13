@@ -9,7 +9,8 @@ from django.views import View
 from ipware import get_client_ip
 from redis import Redis
 
-redis_default = Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, password=settings.REDIS_PASSWORD)
+redis_default = Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, password=settings.REDIS_PASSWORD,
+                      db=settings.REDIS_DB)
 key = 'PING'
 limit = 10
 period = timedelta(seconds=10)
