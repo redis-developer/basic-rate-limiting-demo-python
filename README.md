@@ -30,7 +30,7 @@ Show how the redis works with Django(Python).
 </p>
 
 <p>
-    <a href="https://deploy.cloud.run" target="_blank">
+    <a href="https://deploy.cloud.run/?dir=google-cloud-run" target="_blank">
         <img src="https://deploy.cloud.run/button.svg" alt="Run on Google Cloud" width="200px"/>
     </a>
 </p>

@@ -13,7 +13,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 from dotenv import load_dotenv
-import django_heroku
+
+HEROKU_DEPLOY=os.getenv("HEROKU_DEPLOY", False)
+
+if HEROKU_DEPLOY:
+    import django_heroku
 
 # load dotenv config
 load_dotenv()
@@ -136,4 +140,5 @@ REDIS_DB = os.getenv('REDIS_DB', '0')
 REDIS_URL = os.environ.get('REDIS_URL', f'redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}')
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+if HEROKU_DEPLOY:
+    django_heroku.settings(locals())
