@@ -9,7 +9,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3.6 get-pip.py
 
 # Install project requirements
-pip3 install -r requirements.txt
+pip3 install -r google-cloud-run/requirements.txt
 
 # Build staticfiles
 python3.6 manage.py collectstatic
