@@ -14,11 +14,6 @@ import os
 
 from dotenv import load_dotenv
 
-HEROKU_DEPLOY=os.getenv("HEROKU_DEPLOY", False)
-
-if HEROKU_DEPLOY:
-    import django_heroku
-
 # load dotenv config
 load_dotenv()
 
@@ -35,7 +30,7 @@ SECRET_KEY = '7ogsf#3j^jo=i^q(5(ai_fh=iao=vhimkh602!x0%zm98ecana'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DJANGO_DEBUG", False)
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", ['127.0.0.1', 'localhost', '.vercel.app', 'a.run.app', '.a.run.app'])
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", ['127.0.0.1', 'localhost', '.vercel.app', 'a.run.app', '.a.run.app', '.herokuapp.com'])
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -139,7 +134,3 @@ REDIS_PORT = os.getenv('REDIS_PORT', '6379')
 REDIS_DB = os.getenv('REDIS_DB', '0')
 REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', None)
 REDIS_URL = os.environ.get('REDIS_URL', None)
-
-# Activate Django-Heroku.
-if HEROKU_DEPLOY:
-    django_heroku.settings(locals())
