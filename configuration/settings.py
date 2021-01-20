@@ -137,7 +137,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 REDIS_HOST = os.getenv('REDIS_HOST', '127.0.0.1')
 REDIS_PORT = os.getenv('REDIS_PORT', '6379')
 REDIS_DB = os.getenv('REDIS_DB', '0')
-REDIS_URL = os.environ.get('REDIS_URL', f'redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}')
+REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', None)
+REDIS_URL = os.environ.get('REDIS_URL', None)
 
 # Activate Django-Heroku.
 if HEROKU_DEPLOY:
