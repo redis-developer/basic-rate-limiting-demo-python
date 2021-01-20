@@ -54,7 +54,7 @@ Problem with unsupported the flags when deploying google cloud run button
 
 ---
 
-## Development
+## How to run it locally?
 
 ```
 git clone https://github.com/deliveryweb/redis-rate-limiting-python.git
