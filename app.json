@@ -9,11 +9,5 @@
     {
       "url": "heroku/python"
     }
-  ],
-  "env": {
-    "HEROKU_DEPLOY": {
-      "value": "True",
-      "required": false
-    }
-  }
+  ]
 }
