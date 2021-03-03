@@ -15,7 +15,7 @@
     }
   ],
   "routes": [{
-    "src": "/api/(.*)",
+    "src": "/(.*)",
     "dest": "server/index.py"
 }]
 }
