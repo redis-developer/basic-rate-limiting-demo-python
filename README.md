@@ -9,11 +9,11 @@ Show how the redis works with Django(Python).
 
 # Redis rate-limiting example front
 
-![alt text](preview.png)
+![alt text](docs/preview.png)
 
 # Redis rate-limiting example (command line)
 
-![alt text](command-redis.png)
+![alt text](docs/command-redis.png)
 
 ## Try it out
 
@@ -37,19 +37,30 @@ Show how the redis works with Django(Python).
 </p>
 
 ## How to run on Google Cloud
+
 <p>
+    If you don't have redis yet, plug it in  (https://spring-gcp.saturnism.me/app-dev/cloud-services/cache/memorystore-redis).
     After successful deployment, you need to manually enable the vpc connector as shown in the pictures:
 </p>
 
 1. Open link google cloud console.
-![1 step](1.png)
+
+![1 step](docs/1.png)
+
 2. Click "Edit and deploy new revision" button.
-![2 step](2.png)
-3. Select vpc-connector and deploy application.
-![3 step](3.png)
+
+![2 step](docs/2.png)
+
+3. Add environment.
+
+![3 step](docs/3.png)
+
+4.  Select vpc-connector and deploy application.
+
+![4  step](docs/4.png)
 
 <a href="https://github.com/GoogleCloudPlatform/cloud-run-button/issues/108#issuecomment-554572173">
-Problem with unsupported the flags when deploying google cloud run button
+Problem with unsupported flags when deploying google cloud run button
 </a>
 
 ---
@@ -83,8 +94,6 @@ Use python version: 3.8
 python3 -m venv venv
 source ./venv/bin/activate
 pip3 install -r requirements.txt
-python3 manage.py collectstatic
-python3 manage.py runserver
-
+python3 server/manage.py collectstatic
+python3 server/manage.py runserver
 ```
-

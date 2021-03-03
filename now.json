@@ -3,7 +3,7 @@
   "name": "RedisRateLimitingPython",
   "builds": [
     {
-      "src": "index.py",
+      "src": "server/index.py",
       "use": "@now/python@canary",
       "config": { "maxLambdaSize": "25mb" }
     },{
