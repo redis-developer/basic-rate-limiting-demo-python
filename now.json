@@ -15,8 +15,7 @@
     }
   ],
   "routes": [{
-      "src": "server/static-root/",
-      "dest": "server/static-root/index.html"
-    }
-  ]
+    "src": "/server/(.*)",
+    "dest": "server/index.py"
+}]
 }
