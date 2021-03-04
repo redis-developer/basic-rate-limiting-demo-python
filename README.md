@@ -65,7 +65,7 @@ Problem with unsupported flags when deploying google cloud run button
 
 ---
 
-# <a href="https://redis.io/commands/INCR#pattern-rate-limiter-2">How it works?</a>
+## How it works?
 
 ## 1. How the data is stored:
 <ol>
