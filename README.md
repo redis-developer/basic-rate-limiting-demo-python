@@ -5,7 +5,7 @@
 
 # Basic Redis Rate-limiting Demo Python (Django)
 
-Show how the redis works with Django(Python).
+Show how the redis works with Python (Django).
 
 ![Front example](docs/preview.png)
 
