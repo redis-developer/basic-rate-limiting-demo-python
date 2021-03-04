@@ -65,6 +65,38 @@ Problem with unsupported flags when deploying google cloud run button
 
 ---
 
+# <a href="https://redis.io/commands/INCR#pattern-rate-limiter-2">How it works?</a>
+
+## 1. How the data is stored:
+<ol>
+    <li>New responses are added key-ip:<pre> SETNX your_ip:PING limit_amount
+ Example: SETNX 127.0.0.1:PING 10 </pre><a href="https://redis.io/commands/setnx">
+ more information</a> 
+ <br> <br>
+ </li>
+ <li> Set a timeout on key:<pre>EXPIRE your_ip:PING timeout
+Example: EXPIRE 127.0.0.1:PING 1000 </pre><a href="https://redis.io/commands/expire">
+ more information</a>
+ </li>
+</ol>
+<br/>
+
+## 2. How the data is accessed:
+<ol>
+    <li>Next responses are get bucket: <pre>GET your_ip:PING
+Example: GET 127.0.0.1:PING   
+</pre><a href="https://redis.io/commands/get">
+more information</a>
+<br> <br>
+</li>
+    <li> Next responses are changed bucket: <pre>DECRBY your_ip:PING amount
+Example: DECRBY 127.0.0.1:PING 1</pre>
+<a href="https://redis.io/commands/decrby">
+more information</a>  </li>
+</ol>
+ 
+---
+
 ## How to run it locally?
 
 ```
@@ -80,13 +112,17 @@ docker-compose up -d --build
 ```
 
 
-#### If you install redis manually open django-backend/configuration folder and copy `.env.example` to create `.env`. And provide the values for environment variables
+#### If you install redis manually open server/configuration folder and copy `.env.example` to create `.env`. And provide the values for environment variables (if needed)
+    - DJANGO_DEBUG: Django debug mode
+    - ALLOWED_HOSTS: Allowed hosts
+    - REDIS_URL: Redis server url
     - REDIS_HOST: Redis server host
     - REDIS_PORT: Redis server port
     - REDIS_DB: Redis server db index
     - REDIS_PASSWORD: Redis server password
 
-#### Setup and run 
+#### Run backend
+
 Install python, pip and venv (on mac: https://installpython3.com/mac/)
 
 Use python version: 3.8
@@ -97,3 +133,7 @@ pip3 install -r requirements.txt
 python3 server/manage.py collectstatic
 python3 server/manage.py runserver
 ```
+
+#### Run frontend
+
+Static сontent runs automatically with the backend part.
