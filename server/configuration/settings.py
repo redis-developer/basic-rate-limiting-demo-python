@@ -30,7 +30,7 @@ SECRET_KEY = '7ogsf#3j^jo=i^q(5(ai_fh=iao=vhimkh602!x0%zm98ecana'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DJANGO_DEBUG", False)
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", ['127.0.0.1', 'localhost'])
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", ['127.0.0.1', 'localhost', '.vercel.app', 'a.run.app', '.a.run.app', '.herokuapp.com'])
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -84,12 +84,7 @@ WSGI_APPLICATION = 'configuration.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+DATABASES = {}
 
 
 # Password validation
@@ -137,4 +132,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 REDIS_HOST = os.getenv('REDIS_HOST', '127.0.0.1')
 REDIS_PORT = os.getenv('REDIS_PORT', '6379')
 REDIS_DB = os.getenv('REDIS_DB', '0')
-
+REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', None)
+REDIS_URL = os.environ.get('REDIS_URL', None)

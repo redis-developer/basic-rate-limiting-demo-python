@@ -4,18 +4,10 @@
   "repository": "https://github.com/",
   "logo": "https://redis.io/images/redis-white.png",
   "keywords": ["python", "py", "redis"],
-  "env": {
-		"REDIS_HOST": {
-	  	"description": "Redis server host",
-      "required": true
-    },
-    "REDIS_PORT": {
-	    "description": "Redis server port",
-	    "required": true
-    },
-    "REDIS_DB": {
-	    "description": "Redis server db index",
-	    "required": true
+  "addons": ["heroku-redis"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
     }
-  }
+  ]
 }

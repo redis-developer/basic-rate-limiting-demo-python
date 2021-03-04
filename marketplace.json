@@ -1,0 +1,29 @@
+{
+  "app_name": "Redis rate-limiting example in Python (Django)",
+  "description": "Simple app that demonstrates rate-limiting feature using Redis in Python (Django)",
+  "type": "Building Block",
+  "contributed_by": "Redis Labs",
+  "repo_url": "https://github.com/redis-developer/basic-rate-limiting-demo-python",
+  "download_url": "https://github.com/redis-developer/basic-rate-limiting-demo-python/archive/master.zip",
+  "hosted_url": "",
+  "quick_deploy": "true",
+  "deploy_buttons": [
+    {
+      "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/basic-rate-limiting-demo-python"
+    },
+    {
+      "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-rate-limiting-demo-python.git"
+    }
+  ],
+  "language": ["Python"],
+  "redis_commands": ["PEXPIRE", "MULTI", "DEL", "PTTL", "EXEC", "DECR", "INCR"],
+  "redis_features": [],
+  "redis_modules": ["rate-limit-redis"],
+  "app_image_urls": [
+    "https://github.com/redis-developer/basic-rate-limiting-demo-python/blob/master/preview.png?raw=true"
+  ],
+  "youtube_url": "",
+  "special_tags": [],
+  "verticals": ["Analitics"],
+  "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md"
+}
