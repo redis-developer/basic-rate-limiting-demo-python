@@ -13,7 +13,7 @@ Show how the redis works with Python (Django).
 
 Here's a short video that explains the project and how it uses Redis:
 
-[![Watch the video on YouTube](docs/YTThumbnail.png)](https://www.youtube.com/watch?v=Fk1rVm-iaDo)
+[![Watch the video on YouTube](docs/YTThumbnail.png)](https://www.youtube.com/watch?v=_mFWjk7ONa8)
 
 ## Try it out
 

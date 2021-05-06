@@ -22,7 +22,7 @@
   "app_image_urls": [
     "https://github.com/redis-developer/basic-rate-limiting-demo-python/blob/master/preview.png?raw=true"
   ],
-  "youtube_url": "",
+  "youtube_url": "https://www.youtube.com/watch?v=_mFWjk7ONa8",
   "special_tags": [],
   "verticals": ["Analitics"],
   "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md"
