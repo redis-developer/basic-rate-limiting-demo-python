@@ -20,10 +20,10 @@
   "redis_features": [],
   "redis_modules": ["rate-limit-redis"],
   "app_image_urls": [
-    "https://github.com/redis-developer/basic-rate-limiting-demo-python/blob/master/preview.png?raw=true"
+    "https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/docs/preview.png"
   ],
   "youtube_url": "https://www.youtube.com/watch?v=_mFWjk7ONa8",
   "special_tags": [],
   "verticals": ["Analitics"],
-  "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md"
+  "markdown": "https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/README.md"
 }
