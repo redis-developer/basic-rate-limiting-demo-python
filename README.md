@@ -35,33 +35,34 @@ Show how the redis works with Python (Django).
         
 Open up the link under "Manage this application at Cloud Console"
         
-![ratelimiting](image1.png)
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png)
+       
         
         
 ### 2. Click “Edit and Deploy New Revision”
         
-![ratelimiting](image2.png)
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image2.png)
 
 
 ### 3. Click “Variables and Secrets” 
 
 Supply Redis Enterprise Cloud Endpoint URL
         
-![ratelimiting](image3.png)      
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image3.png)    
         
 ### 4. Enable HTTP/2
         
 Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
-![ratelimiting](image_4.png) 
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_4.png)
 
 ### 5. Allow all the traffic
         
-![ratelimiting](image_5.png) 
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_5.png)
 
  ### 6. Access Rate Limiting app
 
-![ratelimiting](image_6.png)  
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_6.png)
 
 
 
