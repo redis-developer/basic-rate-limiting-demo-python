@@ -35,34 +35,34 @@ Show how the redis works with Python (Django).
         
 Open up the link under "Manage this application at Cloud Console"
         
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png" alt="Deploy with Google" width="800px" height="600px"/>
 
-[[https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png|width=50px]]
         
         
 ### 2. Click “Edit and Deploy New Revision”
         
-[[https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image2.png|width=50px]]
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image2.png" alt="Deploy with Google" width="800px" height="600px"/>
 
 
 ### 3. Click “Variables and Secrets” 
 
 Supply Redis Enterprise Cloud Endpoint URL
         
-[[https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image3.png|width=50px]] 
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image3.png" alt="Deploy with Google" width="800px" height="600px"/>
         
 ### 4. Enable HTTP/2
         
 Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
-[[https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_4.png|width=50px]]
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_4.png" alt="Deploy with Google" width="800px" height="600px"/>
 
 ### 5. Allow all the traffic
         
-[[https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_5.png|width=50px]]
-
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_5.png" alt="Deploy with Google" width="800px" height="600px"/>
+        
  ### 6. Access Rate Limiting app
 
-[[https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_6.png|width=50px]]
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_6.png" alt="Deploy with Google" width="800px" height="600px"/>
 
 
 
