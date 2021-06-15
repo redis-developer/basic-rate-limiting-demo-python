@@ -7,8 +7,6 @@
 
 Show how the redis works with Python (Django).
 
-![Front example](https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/docs/preview.png)
-
 
 ## Try it out
 
