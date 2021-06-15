@@ -60,9 +60,8 @@ Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
 ![](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_5.png?v=2&s=2)
         
- ### 6. Access Rate Limiting app
+Hence, you should be able to access Rate Limiting app
 
-![](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_6.png?v=2&s=2)
 
 
 
