@@ -31,30 +31,31 @@ Show how the redis works with Python (Django).
 
 ## How to run on Google Cloud
 
-##  1. Open up Google Run console
-        
-Click on "Run on Google Cloud" button to open up Google Run console
+###  1. Click "Run on Google Cloud" 
         
 ![ratelimiting](image1.png)
         
         
-## 2. Click on the link under “Manage this application at Cloud Console:(as shown above).
-
-Click on “Edit and Deploy New Revision”
+### 2. Click “Edit and Deploy New Revision”
         
 ![ratelimiting](image2.png)
 
 
-## 3. Click on “Variables and Secrets” and add Redis Enterprise Cloud Endpoint URL
+### 3. Click “Variables and Secrets” 
+
+Supply Redis Enterprise Cloud Endpoint URL
         
 ![ratelimiting](image3.png)      
         
-## 4. 
+### 4. Allow all traffic
         
 Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
-![ratelimiting](image_4.png)  
-![ratelimiting](image_5.png)  
+![ratelimiting](image_4.png) 
+
+![ratelimiting](image_4.png) 
+ ### 5. Access Rate Limiting app
+
 ![ratelimiting](image_6.png)  
 
 
