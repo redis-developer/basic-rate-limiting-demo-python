@@ -9,11 +9,6 @@ Show how the redis works with Python (Django).
 
 ![Front example](https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/docs/preview.png)
 
-# Overview video
-
-Here's a short video that explains the project and how it uses Redis:
-
-[![Watch the video on YouTube](https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/docs/YTThumbnail.png)](https://www.youtube.com/watch?v=_mFWjk7ONa8)
 
 ## Try it out
 
