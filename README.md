@@ -34,9 +34,11 @@ Show how the redis works with Python (Django).
 ###  1. Click "Run on Google Cloud" 
         
 Open up the link under "Manage this application at Cloud Console"
-        
 
-![](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png?v=400&s=400)
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png" alt="Deploy with Cloud Run" width="600" height="400"/>
+</p>
+
         
 
         
