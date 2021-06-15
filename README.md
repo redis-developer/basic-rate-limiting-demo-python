@@ -33,6 +33,8 @@ Show how the redis works with Python (Django).
 
 ###  1. Click "Run on Google Cloud" 
         
+Open up the link under "Manage this application at Cloud Console"
+        
 ![ratelimiting](image1.png)
         
         
@@ -47,13 +49,16 @@ Supply Redis Enterprise Cloud Endpoint URL
         
 ![ratelimiting](image3.png)      
         
-### 4. Allow all traffic
+### 4. Add Environmental variable
         
 Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
 ![ratelimiting](image_4.png) 
 
-![ratelimiting](image_4.png) 
+### 5. Allow all traffic
+        
+![ratelimiting](image_5.png) 
+
  ### 5. Access Rate Limiting app
 
 ![ratelimiting](image_6.png)  
