@@ -35,34 +35,34 @@ Show how the redis works with Python (Django).
         
 Open up the link under "Manage this application at Cloud Console"
         
-
- <img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png" alt="rate limiting" width="600" height="400">
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png){:height="600px" width="400px"}
+ 
         
         
 ### 2. Click “Edit and Deploy New Revision”
         
-<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image2.png" alt="rate limiting" width="600" height="400">
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image2.png){:height="600px" width="400px"}
 
 
 ### 3. Click “Variables and Secrets” 
 
 Supply Redis Enterprise Cloud Endpoint URL
         
-<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image3.png" alt="rate limiting" width="600" height="400">   
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image3.png){:height="600px" width="400px"}   
         
 ### 4. Enable HTTP/2
         
 Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
-<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_4.png" alt="rate limiting" width="600" height="400">
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_4.png){:height="600px" width="400px"}
 
 ### 5. Allow all the traffic
         
-<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_5.png" alt="rate limiting" width="600" height="400">
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_5.png){:height="600px" width="400px"}
 
  ### 6. Access Rate Limiting app
 
-<img src="https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_6.png" alt="rate limiting" width="600" height="400">
+![ratelimiting](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image_6.png){:height="600px" width="400px"}
 
 
 
