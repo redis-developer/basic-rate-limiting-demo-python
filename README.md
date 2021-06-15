@@ -49,13 +49,13 @@ Supply Redis Enterprise Cloud Endpoint URL
         
 ![ratelimiting](image3.png)      
         
-### 4. Add Environmental variable
+### 4. Enable HTTP/2
         
 Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
 ![ratelimiting](image_4.png) 
 
-### 5. Allow all traffic
+### 5. Allow all the traffic
         
 ![ratelimiting](image_5.png) 
 
