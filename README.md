@@ -59,7 +59,7 @@ Ensure that you have Redis Enterprise Cloud DB created under GCP.
         
 ![ratelimiting](image_5.png) 
 
- ### 5. Access Rate Limiting app
+ ### 6. Access Rate Limiting app
 
 ![ratelimiting](image_6.png)  
 
