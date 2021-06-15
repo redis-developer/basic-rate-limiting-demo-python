@@ -38,6 +38,8 @@ Open up the link under "Manage this application at Cloud Console"
 
 ![](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image1.png?v=400&s=400)
         
+
+        
 ### 2. Click “Edit and Deploy New Revision”
         
 ![](https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/image2.png?v=400&s=400)
