@@ -25,5 +25,5 @@
   "youtube_url": "https://www.youtube.com/watch?v=_mFWjk7ONa8",
   "special_tags": [],
   "verticals": ["Analytics"],
-  "markdown": "https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/README.md"
+  "markdown": "https://raw.githubusercontent.com/redis-developer/basic-rate-limiting-demo-python/master/README.md"
 }
