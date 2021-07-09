@@ -18,7 +18,7 @@
   "language": ["Python"],
   "redis_commands": ["PEXPIRE", "MULTI", "DEL", "PTTL", "EXEC", "DECR", "INCR"],
   "redis_features": [],
-  "redis_modules": ["rate-limit-redis"],
+  "redis_modules": [""],
   "app_image_urls": [
     "https://github.com/redis-developer/basic-rate-limiting-demo-python/raw/master/docs/preview.png"
   ],
