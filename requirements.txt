@@ -9,5 +9,5 @@ rfc3986
 sniffio
 sqlparse
 urllib3
-uvicorn=
+uvicorn
 uvloop
