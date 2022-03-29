@@ -11,3 +11,4 @@ sqlparse
 urllib3
 uvicorn
 uvloop
+pytest
