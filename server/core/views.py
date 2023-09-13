@@ -24,13 +24,10 @@ period = timedelta(seconds=10)
 
 
 def request_is_limited(red: Redis, redis_key: str, redis_limit: int, redis_period: timedelta):
-    if red.setnx(redis_key, redis_limit):
+    if red.setnx(redis_key, 0):
         red.expire(redis_key, int(redis_period.total_seconds()))
-    bucket_val = red.get(redis_key)
-    if bucket_val and int(bucket_val) > 0:
-        red.decrby(redis_key, 1)
-        return False
-    return True
+    bucket_val = red.incrby(redis_key, 1)
+    return bucket_val and int(bucket_val) > redis_limit
 
 
 class GetPongView(View):
